@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+*{
+    margin: 0px 0px;
+    padding: 0px 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Cairo", serif;
+    background-color: #FFF2CC;
+    user-select: none;
+}
+:-webkit-scrollbar {
+    width: 18px;
+    /* height: 5px; */
+}
+::-webkit-scrollbar-track {
+    background: #7B3911;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 10px;
+}
+.App{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    background-color: #FFF2CC;
+}
+.Question{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+    border-radius: 25px;
+    box-shadow: 0px 3pt 4pt rgba(0, 0, 0, 0.4);
+    background-color: #FFF2CC;
+    width: 85%;
+    padding: 10px;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: right;
+}
+.Question p{
+    font-size: 16px;
+    color: #7B3911;
+}
+.Question h2{
+    font-size: 24px;
+    color: #7B3911;
+}
+.Question h4{
+    font-size: 24px;
+    color: #7B3911;
+}
+.Question h4 span{
+    color: #222A35;
+}
+.Question .Answer{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+.Answer i{
+    font-size: 16px;
+    color: #222A35;
+}
+.Answer-Text h4{
+    font-size: 24px;
+    text-align: right;
+    color: #222A35;
+}
+.Question-Text{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap-reverse;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+    text-wrap: nowrap;
+}
+.Question-Text-flex{
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+
+@media (max-width: 1380px) {
+    .Question-Text h4{
+        font-size: 20px;
+    }
+    .Answer-Text h4{
+        font-size: 20px;
+    }
+}
+@media (max-width: 1183px) {
+    .Question-Text h4{
+        font-size: 24px;
+    }
+    .Answer-Text h4{
+        font-size: 24px;
+    }
+}
+@media (max-width: 730px) {
+    .Question-Text h4{
+        font-size: 20px;
+    }
+    .Answer-Text h4{
+        font-size: 20px;
+    }
+}
+@media (max-width: 605px) {
+    .Question-Text h4{
+        font-size: 18px;
+    }
+    .Answer-Text h4{
+        font-size: 18px;
+    }
+}
