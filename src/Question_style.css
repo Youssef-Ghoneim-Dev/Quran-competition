@@ -1,0 +1,95 @@
+
+.Question{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+    border-radius: 25px;
+    box-shadow: 0px 3pt 4pt rgba(0, 0, 0, 0.4);
+    background-color: #FFF2CC;
+    width: 85%;
+    padding: 10px;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: right;
+}
+.Question p{
+    font-size: 16px;
+    color: #7B3911;
+}
+.Question h2{
+    font-size: 24px;
+    color: #7B3911;
+}
+.Question h4{
+    font-size: 24px;
+    color: #7B3911;
+}
+.Question h4 span{
+    color: #222A35;
+}
+.Question .Answer{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+.Answer i{
+    font-size: 16px;
+    color: #222A35;
+}
+.Answer-Text h4{
+    font-size: 24px;
+    text-align: right;
+    color: #222A35;
+}
+.Question-Text{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap-reverse;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+    text-wrap: nowrap;
+}
+.Question-Text-flex{
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+
+@media (max-width: 1380px) {
+    .Question-Text h4{
+        font-size: 20px;
+    }
+    .Answer-Text h4{
+        font-size: 20px;
+    }
+}
+@media (max-width: 1183px) {
+    .Question-Text h4{
+        font-size: 24px;
+    }
+    .Answer-Text h4{
+        font-size: 24px;
+    }
+}
+@media (max-width: 730px) {
+    .Question-Text h4{
+        font-size: 20px;
+    }
+    .Answer-Text h4{
+        font-size: 20px;
+    }
+}
+@media (max-width: 605px) {
+    .Question-Text h4{
+        font-size: 18px;
+    }
+    .Answer-Text h4{
+        font-size: 18px;
+    }
+}

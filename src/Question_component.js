@@ -1,5 +1,5 @@
 import React from "react";
-export default function Question_component({ Question, QuestionNumber, openIndex, setOpenIndex, index }) {
+export default function QuestionComponent({ Question, QuestionNumber, openIndex, setOpenIndex, index }) {
     const getOrderText = (number) => {
         const orders = ["الأول", "الثاني", "الثالث", "الرابع", "الخامس", "السادس", "السابع", "الثامن", "التاسع", "العاشر",
             "الحادي عشر", "الثاني عشر", "الثالث عشر", "الرابع عشر", "الخامس عشر", "السادس عشر", "السابع عشر", "الثامن عشر", "التاسع عشر", "العشرون"];
@@ -9,13 +9,6 @@ export default function Question_component({ Question, QuestionNumber, openIndex
     
     const handleToggle = () => {
         setOpenIndex(openIndex === index ? null : index);
-        // if (openIndex === index) { 
-        //     let i = document.querySelectorAll("#_"+ index);
-        //     i.forEach((item) => item.className = "bx bxs-down-arrow icon");
-        // }else{
-        //     let i = document.querySelectorAll("#_"+ index);
-        //     i.forEach((item) => item.className = "bx bxs-up-arrow icon");
-        // }
     };
     
     return (
@@ -32,7 +25,7 @@ export default function Question_component({ Question, QuestionNumber, openIndex
                 </div>
             </div>
             <div className="Answer" onClick={handleToggle}>
-                <i className={openIndex === index ? "bx bxs-up-arrow":"bx bxs-down-arrow"} id={"_"+index}></i>
+                <i className={openIndex === index ? "bx bxs-up-arrow":"bx bxs-down-arrow"}></i>
                 <h2>الإجابة</h2>
             </div>
             {openIndex === index && (
